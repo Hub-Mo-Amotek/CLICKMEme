@@ -155,5 +155,20 @@ section {
 #container .upgrade-container #upgrade-buttons #auto-clicker:hover {
   background: rgb(145, 238, 6);
 }
+#container .upgrade-container #upgrade-buttons #meme-clicker {
+  width: 10rem;
+  height: 3rem;
+  background: greenyellow;
+  box-shadow: black 4px 4px 0px;
+  border-radius: 8px;
+  transition: transform 200ms, box-shadow 200ms;
+}
+#container .upgrade-container #upgrade-buttons #meme-clicker:active {
+  transform: translateY(4px) translateX(4px);
+  box-shadow: black 0px 0px 0px;
+}
+#container .upgrade-container #upgrade-buttons #meme-clicker:hover {
+  background: rgb(145, 238, 6);
+}
 
 /*# sourceMappingURL=style.css.map */
