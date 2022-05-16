@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+section {
+    border: 1px solid black;
+}
+#container {
+    display: flex;
+
+    .click-container{
+        margin: .5rem;
+        width:30%;
+        height: 100vh;
+    }
+    .meme-container {
+        margin:.5rem;
+        width:65%;
+        height: 100vh;
+    }
+}

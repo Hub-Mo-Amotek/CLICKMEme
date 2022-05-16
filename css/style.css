@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+section {
+  border: 1px solid black;
+}
+
+#container {
+  display: flex;
+}
+#container .click-container {
+  margin: 0.5rem;
+  width: 30%;
+  height: 100vh;
+}
+#container .meme-container {
+  margin: 0.5rem;
+  width: 65%;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=style.css.map */
