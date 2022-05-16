@@ -2,8 +2,11 @@
 
 let counter = 0;
 let upgradeOne = 1;
+let upgradeTwo = 0
 let counterHTML = document.getElementById('theCounter');
 let clickPower = document.getElementById('clickPower');
+let autoClickCounter = document.getElementById('auto-click-counter');
+
 
 
 // the first upgrade button
@@ -13,10 +16,12 @@ let upgraderOne = document.getElementById('click-plus').addEventListener('click'
 });
 
 // the second upgrade button
-let upgradeTwo =  document.getElementById('auto-clicker').addEventListener('click', () => {
+let upgraderTwo =  document.getElementById('auto-clicker').addEventListener('click', () => {
     setInterval(() => {
         counterHTML.innerHTML = counter += 1;
     },1000);
+    upgradeTwo += 1
+    autoClickCounter.innerHTML = upgradeTwo;
 });
 
 
