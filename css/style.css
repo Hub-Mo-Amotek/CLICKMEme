@@ -11,6 +11,9 @@ header h1 {
   text-align: center;
   margin: 2rem;
 }
+header #Hunderline {
+  text-decoration: underline 5px greenyellow;
+}
 
 section {
   border: 1px solid black;
@@ -45,37 +48,60 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid yellow;
 }
 #container .click-container #clicker {
   height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid yellow;
+}
+#container .click-container #clicker img {
+  animation: spin 2s infinite;
+}
+#container .click-container #clicker img:hover {
+  width: 300px;
+  transition: 1s;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 #container .click-container #clicker-bottom {
   height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid yellow;
+}
+#container .click-container #chmecklesBottom {
+  text-decoration: underline 5px solid greenyellow;
+  font-weight: bold;
 }
 #container .meme-container {
   margin: 0.5rem;
   width: 45%;
   height: 85vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+#container .meme-container #click-counter #theCounter {
+  text-decoration: underline 5px solid greenyellow;
 }
 #container .meme-container #meme {
   width: 70%;
   height: 70%;
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#container .meme-container #meme img {
+  width: 430px;
+  border-radius: 5%;
 }
 #container .upgrade-container {
   margin: 0.5rem;

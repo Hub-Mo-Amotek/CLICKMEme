@@ -6,6 +6,8 @@
 $fredoka: 'Fredoka One', 'Arial Narrow', Arial, sans-serif;
 // p font
 $bubblegum: 'Bubblegum Sans', 'Arial Narrow', Arial, sans-serif;
+// KEYFRAMES
+
 
 
 header {  
@@ -15,6 +17,9 @@ header {
         font-size: 4rem;
         text-align: center;
         margin: 2rem;
+    }
+    #Hunderline {
+        text-decoration: underline 5px greenyellow;
     }
 }
 section {
@@ -48,14 +53,26 @@ section {
                 display:flex;
                 align-items: center;
                 justify-content: center;
-                border: 1px solid yellow;
             }
             #clicker {
                 height: 30vh;
                 display:flex;
                 align-items: center;
                 justify-content: center;
-                border: 1px solid yellow;
+
+                    img {
+                        animation: spin 2s infinite;
+                    }
+                    img:hover {
+                        width: 300px;
+                        transition: 1s;
+                    }
+                    @keyframes spin {
+                        from { transform: rotate(0deg); }
+                        to { transform: rotate(360deg); }
+                    }
+                    
+                    
 
             }
             #clicker-bottom {
@@ -63,8 +80,10 @@ section {
                 display:flex;
                 align-items: center;
                 justify-content: center;
-                border: 1px solid yellow;
-
+            }
+            #chmecklesBottom {
+                text-decoration: underline 5px solid greenyellow;
+                font-weight: bold;
             }
     }
     .meme-container {
@@ -72,15 +91,25 @@ section {
         width:45%;
         height: 85vh;
         display:flex;
+        flex-direction: column;
         align-items: center;
         justify-content:center;
+        #click-counter {
+
+            #theCounter {
+                text-decoration: underline 5px solid greenyellow;
+            }
+        }
             #meme {
                 width: 70%;
                 height:70%;
-                border: 1px solid red;
                 display:flex;
                 align-items: center;
                 justify-content: center;
+                    img {
+                        width: 430px;
+                        border-radius: 5%;
+                    }
             }
     }
     .upgrade-container {
