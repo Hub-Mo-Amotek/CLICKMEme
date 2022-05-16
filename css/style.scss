@@ -9,7 +9,9 @@ $bubblegum: 'Bubblegum Sans', 'Arial Narrow', Arial, sans-serif;
 // KEYFRAMES
 
 
-
+body {
+    background-image: url(/images/wp5015262-desktop-rick-and-morty-wallpapers.jpg);
+}
 header {  
     height: 10vh;
     h1 {
@@ -41,6 +43,7 @@ section {
         }
 
     .click-container{
+        background-color: rgba(255, 255, 255, 0.9);        
         margin: .5rem;
         width:25%;
         height: 85vh;
@@ -87,6 +90,7 @@ section {
             }
     }
     .meme-container {
+        background-color: rgba(255, 255, 255, 0.9);        
         margin:.5rem;
         width:45%;
         height: 85vh;
@@ -113,6 +117,7 @@ section {
             }
     }
     .upgrade-container {
+        background-color: rgba(255, 255, 255, 0.9);        
         margin:.5rem;
         width:15%;
         height: 85vh;

@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url(/images/wp5015262-desktop-rick-and-morty-wallpapers.jpg);
+}
+
 header {
   height: 10vh;
 }
@@ -35,6 +39,7 @@ section {
   font-size: 1.3rem;
 }
 #container .click-container {
+  background-color: rgba(255, 255, 255, 0.9);
   margin: 0.5rem;
   width: 25%;
   height: 85vh;
@@ -81,6 +86,7 @@ section {
   font-weight: bold;
 }
 #container .meme-container {
+  background-color: rgba(255, 255, 255, 0.9);
   margin: 0.5rem;
   width: 45%;
   height: 85vh;
@@ -104,6 +110,7 @@ section {
   border-radius: 5%;
 }
 #container .upgrade-container {
+  background-color: rgba(255, 255, 255, 0.9);
   margin: 0.5rem;
   width: 15%;
   height: 85vh;
