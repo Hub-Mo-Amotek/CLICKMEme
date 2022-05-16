@@ -19,6 +19,7 @@ header {
         font-size: 4rem;
         text-align: center;
         margin: 2rem;
+        text-shadow: greenyellow 1px 1px 0;
     }
     #Hunderline {
         text-decoration: underline 5px greenyellow;
@@ -67,7 +68,7 @@ section {
                         animation: spin 2s infinite;
                     }
                     img:hover {
-                        width: 300px;
+                        width: 14rem;
                         transition: 1s;
                     }
                     @keyframes spin {
@@ -111,7 +112,7 @@ section {
                 align-items: center;
                 justify-content: center;
                     img {
-                        width: 430px;
+                        width: 22rem;
                         border-radius: 5%;
                     }
             }
