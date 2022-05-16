@@ -2,23 +2,144 @@
     box-sizing: border-box;
 }
 
-h1 {
-    text-align: center;
+// header font
+$fredoka: 'Fredoka One', 'Arial Narrow', Arial, sans-serif;
+// p font
+$bubblegum: 'Bubblegum Sans', 'Arial Narrow', Arial, sans-serif;
+
+
+header {  
+    height: 10vh;
+    h1 {
+        font-family: $fredoka;
+        font-size: 4rem;
+        text-align: center;
+        margin: 2rem;
+    }
 }
 section {
     border: 1px solid black;
+    border-radius: 45px;
 }
 #container {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+        h2 {
+            font-family: $fredoka;
+            font-size: 2rem;
+            text-align: center;
+        }
+        p {
+            font-family: $bubblegum;
+            font-size: 1.3rem;
+        }
 
     .click-container{
         margin: .5rem;
-        width:30%;
-        height: 100vh;
+        width:25%;
+        height: 85vh;
+        padding: 2rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+            #clicker-head {
+                height: 30vh;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid yellow;
+            }
+            #clicker {
+                height: 30vh;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid yellow;
+
+            }
+            #clicker-bottom {
+                height:30vh;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid yellow;
+
+            }
     }
     .meme-container {
         margin:.5rem;
-        width:65%;
-        height: 100vh;
+        width:45%;
+        height: 85vh;
+        display:flex;
+        align-items: center;
+        justify-content:center;
+            #meme {
+                width: 70%;
+                height:70%;
+                border: 1px solid red;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+            }
+    }
+    .upgrade-container {
+        margin:.5rem;
+        width:15%;
+        height: 85vh;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+            #upgrade-head {
+                display:flex;
+                align-items: center;
+                justify-content:center;
+                height: 20%;
+            }
+            #upgrade-buttons {
+                height: 50%;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content:space-around;
+                // button styling
+                    #click-plus {
+                        width: 10rem;
+                        height:3rem;
+                        background: greenyellow;
+                        box-shadow: black 4px 4px 0px;
+                        border-radius: 8px;
+                        transition: transform 200ms, box-shadow 200ms;
+
+                    }
+                    // button click animation
+                    #click-plus:active {
+                        transform: translateY(4px) translateX(4px);
+                        box-shadow: black 0px 0px 0px;
+                    }
+                    // button hover effect
+                    #click-plus:hover {
+                        background: rgb(145, 238, 6);
+                    }
+                    // auto clicker button styling
+                    #auto-clicker {
+                        width: 10rem;
+                        height:3rem;
+                        background: greenyellow;
+                        box-shadow: black 4px 4px 0px;
+                        border-radius: 8px;
+                        transition: transform 200ms, box-shadow 200ms;
+                    }
+                    // button click animation
+                    #auto-clicker:active {
+                        transform: translateY(4px) translateX(4px);
+                        box-shadow: black 0px 0px 0px;
+                    }
+                    // button hover effect
+                    #auto-clicker:hover {
+                        background: rgb(145, 238, 6);
+                    }
+            }
     }
 }
