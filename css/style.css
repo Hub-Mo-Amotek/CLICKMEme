@@ -110,6 +110,12 @@ section {
   width: 22rem;
   border-radius: 5%;
 }
+#container .meme-container #collected-memes {
+  margin: 1rem;
+  width: 90%;
+  height: 20%;
+  overflow: auto;
+}
 #container .meme-container #collected-memes p {
   margin: 0.3rem;
   font-family: "Fredoka One", "Arial Narrow", Arial, sans-serif;
