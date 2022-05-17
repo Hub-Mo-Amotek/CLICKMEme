@@ -25,6 +25,7 @@ let upgraderOne = document.getElementById('click-plus').addEventListener('click'
 
     if (counter > priceOne){ 
         counter -= priceOne;
+        counterHTML.innerHTML = counter;
         priceOne *= 2;
         document.getElementById('price-one').innerHTML = priceOne + ' SMH';
         upgradeOne += 1;
@@ -40,6 +41,7 @@ let upgraderTwo =  document.getElementById('auto-clicker').addEventListener('cli
 
     if(counter > priceTwo) {
         counter -= priceTwo;
+        counterHTML.innerHTML = counter;
         priceTwo *= 2;
         document.getElementById('price-two').innerHTML = priceTwo +' SMH'
         setInterval(() => {
@@ -58,6 +60,7 @@ let upgraderThree = document.getElementById('meme-clicker').addEventListener('cl
 
     if (counter > priceThree) {
         counter -= priceThree;
+        counterHTML.innerHTML = counter;
         priceThree *= 2;
         document.getElementById('price-three').innerHTML = priceThree + ' SMH'
         let randomNum = Math.floor(Math.random()*theMemes.length);
