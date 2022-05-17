@@ -62,7 +62,7 @@ section {
   justify-content: center;
 }
 #container .click-container #clicker img {
-  animation: spin 2s infinite;
+  animation: spin 45s infinite;
 }
 #container .click-container #clicker img:hover {
   width: 14rem;
@@ -73,7 +73,7 @@ section {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(3600deg);
   }
 }
 #container .click-container #clicker-bottom {
@@ -138,20 +138,19 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 #container .upgrade-container #upgrade-head {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  height: 20%;
 }
 #container .upgrade-container #upgrade-buttons {
   height: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-end;
 }
 #container .upgrade-container #upgrade-buttons #click-plus {
   font-size: 1.3rem;
@@ -203,7 +202,19 @@ section {
 #container .upgrade-container #upgrade-buttons .price {
   font-family: "Fredoka One", "Arial Narrow", Arial, sans-serif;
   color: red;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
+}
+#container .upgrade-container #upgrade-buttons #portal {
+  width: 5rem;
+  animation: twist 60s infinite;
+}
+@keyframes twist {
+  from {
+    transform: rotate(7200deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

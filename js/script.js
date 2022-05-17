@@ -10,6 +10,7 @@ let memeHolder = document.getElementById('the-meme-holder');
 let priceOne = 50;
 let priceTwo = 100;
 let priceThree = 500;
+let priceFour = 600;
 
 
 
@@ -24,7 +25,15 @@ let upgraderOne = document.getElementById('click-plus').addEventListener('click'
     if (counter > priceOne){ 
         counter -= priceOne;
         counterHTML.innerHTML = Math.round(counter);
-        priceOne *= 1.5;
+        if (priceOne > 1000) {
+            priceOne *= 1.1
+        }
+        else if (priceOne > 500){
+            priceOne *= 1.2;
+        }
+        else {
+            priceOne *= 1.4;
+        }
         document.getElementById('price-one').innerHTML = Math.round(priceOne) + ' SMH';
         upgradeOne += 1;
         clickPower.innerHTML = upgradeOne;
@@ -39,7 +48,15 @@ let upgraderTwo =  document.getElementById('auto-clicker').addEventListener('cli
 
     if(counter > priceTwo) {
         counter -= priceTwo;
-        let nPriceTwo = priceTwo *= 1.5;
+        if (priceTwo > 1000) {
+            priceTwo *= 1.1;
+        }
+        else if (priceTwo > 500) {
+            priceTwo *= 1.2;
+        }
+        else {
+            priceTwo *= 1.4;
+        }
         document.getElementById('price-two').innerHTML = Math.round(priceTwo) +' SMH'
         setInterval(() => {
             counterHTML.innerHTML = Math.round(counter += 1);
@@ -58,7 +75,15 @@ let upgraderThree = document.getElementById('meme-clicker').addEventListener('cl
     if (counter > priceThree) {
         counter -= priceThree;
         counterHTML.innerHTML = Math.round(counter);
-        priceThree *= 1.5;
+        if (priceThree > 1000) {
+            priceThree *= 1.1;
+        }
+        else if (priceThree > 500) {
+            priceThree *= 1.2
+        }
+        else {
+            priceThree *= 1.4;
+        }
         document.getElementById('price-three').innerHTML = Math.round(priceThree) + ' SMH'
         let randomNum = Math.floor(Math.random()*theMemes.length);
         let randomMeme = theMemes[randomNum];
@@ -74,9 +99,11 @@ let upgraderThree = document.getElementById('meme-clicker').addEventListener('cl
     }
 })
 
+/* the portal --> make this change background and fontcolor( like entering another dimension) with a timer on top that counts 30s and all clicks are current schmeckle power * 10 and meeseeks produce 10x more schmeckles */
 
+// let bonusPortal = document.getElementById('portal-entrance').addEventListener('click', () => {
 
-
+// })
 
 
 // the incrementor
