@@ -14,7 +14,7 @@ let priceThree = 2000;
 
 
 // meme pic array
-let theMemes = ["memeImages/DogVsCat.png", "memeImages/CuteKitty.png","memeImages/ClarkKentProblems.png","memeImages/ChildHoodGoku.png","memeImages/ConfusedOprah.png","memeImages/scottBitch.png","memeImages/ChipmunksVersion.png","memeImages/SaminaMinaEhEH.png","memeImages/YeetWaiter.png","memeImages/Dreams.png","memeImages/ShittyToShitty.png","memeImages/RealityChecker.png","memeImages/FastBanana.png","memeImages/NoNotificationForMe.png","memeImages/GrowingUpForGamers.png","memeImages/GrowingUpForGamers.png","memeImages/ThingsIDo.png","memeImages/CountryAndMe.png","memeImages/EmbraceTradition.png","memeImages/ShowerProblems.png","memeImages/SatanWorkingAtYT.png","memeImages/WhatSchoolTeachesYou.png"]
+let theMemes = ["../memeImages/DogVsCat.png", "../memeImages/CuteKitty.png","../memeImages/ClarkKentProblems.png","../memeImages/ChildHoodGoku.png","../memeImages/ConfusedOprah.png","../memeImages/scottBitch.png","../memeImages/ChipmunksVersion.png","../memeImages/SaminaMinaEhEH.png","../memeImages/YeetWaiter.png","../memeImages/Dreams.png","../memeImages/ShittyToShitty.png","../memeImages/RealityChecker.png","../memeImages/FastBanana.png","../memeImages/NoNotificationForMe.png","../memeImages/GrowingUpForGamers.png","../memeImages/GrowingUpForGamers.png","../memeImages/ThingsIDo.png","../memeImages/CountryAndMe.png","../memeImages/EmbraceTradition.png","../memeImages/ShowerProblems.png","../memeImages/SatanWorkingAtYT.png","../memeImages/WhatSchoolTeachesYou.png"]
 
 
 
