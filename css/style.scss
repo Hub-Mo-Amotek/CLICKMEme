@@ -140,6 +140,8 @@ section {
                 justify-content:space-around;
                 // button styling
                     #click-plus {
+                        font-size: 1.3rem;
+                        color:rgb(0, 0, 0);
                         width: 10rem;
                         height:3rem;
                         background: greenyellow;
@@ -191,6 +193,10 @@ section {
                     // button hover effect
                     #meme-clicker:hover {
                         background: rgb(145, 238, 6);
+                    }
+                    .price {
+                        color: red;
+                        font-size:.5rem;
                     }
             }
     }

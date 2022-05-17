@@ -7,6 +7,9 @@ let counterHTML = document.getElementById('theCounter');
 let clickPower = document.getElementById('clickPower');
 let autoClickCounter = document.getElementById('auto-click-counter');
 let memeHolder = document.getElementById('the-meme-holder');
+let priceOne = 100;
+let priceTwo = 1000;
+let priceThree = 2000;
 
 
 
@@ -17,23 +20,53 @@ let theMemes = ["/memeImages/DogVsCat.png", "/memeImages/CuteKitty.png","/memeIm
 
 // the first upgrade button
 let upgraderOne = document.getElementById('click-plus').addEventListener('click', () => {
-    upgradeOne += 1;
-    clickPower.innerHTML = upgradeOne;
+    console.log(counter);
+    console.log(priceOne);
+
+    if (counter > priceOne){ 
+        counter -= priceOne;
+        priceOne *= 2;
+        document.getElementById('price-one').innerHTML = priceOne + ' SMH';
+        upgradeOne += 1;
+        clickPower.innerHTML = upgradeOne;
+    }
+    else {
+        alert("you are poor, go get them Schmeckles!!")
+    }
 });
 
 // the second upgrade button
 let upgraderTwo =  document.getElementById('auto-clicker').addEventListener('click', () => {
-    setInterval(() => {
-        counterHTML.innerHTML = counter += 1;
-    },1000);
-    upgradeTwo += 1
-    autoClickCounter.innerHTML = upgradeTwo;
+
+    if(counter > priceTwo) {
+        counter -= priceTwo;
+        priceTwo *= 2;
+        document.getElementById('price-two').innerHTML = priceTwo +' SMH'
+        setInterval(() => {
+            counterHTML.innerHTML = counter += 1;
+        },1000);
+        upgradeTwo += 1
+        autoClickCounter.innerHTML = upgradeTwo;
+    }
+    else {
+        alert("you are poor, go get them Schmeckles!!")
+    }
+
 });
 // the third upgrade button
 let upgraderThree = document.getElementById('meme-clicker').addEventListener('click', () => {
-    let randomNum = Math.floor(Math.random()*theMemes.length);
-    let randomMeme = theMemes[randomNum];
-    memeHolder.setAttribute('src', randomMeme);
+
+    if (counter > priceThree) {
+        counter -= priceThree;
+        priceThree *= 2;
+        document.getElementById('price-three').innerHTML = priceThree + ' SMH'
+        let randomNum = Math.floor(Math.random()*theMemes.length);
+        let randomMeme = theMemes[randomNum];
+        memeHolder.setAttribute('src', randomMeme);
+    }
+    else {
+        alert("you are poor, go get them Schmeckles!!")
+    }
 })
 
 

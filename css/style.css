@@ -134,6 +134,8 @@ section {
   justify-content: space-around;
 }
 #container .upgrade-container #upgrade-buttons #click-plus {
+  font-size: 1.3rem;
+  color: rgb(0, 0, 0);
   width: 10rem;
   height: 3rem;
   background: greenyellow;
@@ -177,6 +179,10 @@ section {
 }
 #container .upgrade-container #upgrade-buttons #meme-clicker:hover {
   background: rgb(145, 238, 6);
+}
+#container .upgrade-container #upgrade-buttons .price {
+  color: red;
+  font-size: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
