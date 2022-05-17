@@ -110,6 +110,15 @@ section {
   width: 22rem;
   border-radius: 5%;
 }
+#container .meme-container #collected-memes p {
+  margin: 0.3rem;
+  font-family: "Fredoka One", "Arial Narrow", Arial, sans-serif;
+}
+#container .meme-container #collected-memes img {
+  width: 3rem;
+  margin: 0.3rem;
+  border-radius: 10%;
+}
 #container .upgrade-container {
   background-color: rgba(255, 255, 255, 0.9);
   margin: 0.5rem;
