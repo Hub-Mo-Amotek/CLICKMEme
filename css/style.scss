@@ -104,6 +104,11 @@ section {
             #theCounter {
                 text-decoration: underline 5px solid greenyellow;
             }
+            p {
+                font-family: $bubblegum;
+                margin: 1rem;
+                font-weight: bold;
+            }
         }
             #meme {
                 width: 70%;

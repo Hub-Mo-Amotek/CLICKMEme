@@ -99,6 +99,11 @@ section {
 #container .meme-container #click-counter #theCounter {
   text-decoration: underline 5px solid greenyellow;
 }
+#container .meme-container #click-counter p {
+  font-family: "Bubblegum Sans", "Arial Narrow", Arial, sans-serif;
+  margin: 1rem;
+  font-weight: bold;
+}
 #container .meme-container #meme {
   width: 70%;
   height: 70%;
