@@ -10,7 +10,7 @@ $bubblegum: 'Bubblegum Sans', 'Arial Narrow', Arial, sans-serif;
 
 
 body {
-    background-image: url(/images/wp5015262-desktop-rick-and-morty-wallpapers.jpg);
+    background-image: url(../images/wp5015262-desktop-rick-and-morty-wallpapers.jpg);
 }
 header {  
     height: 10vh;
@@ -195,6 +195,7 @@ section {
                         background: rgb(145, 238, 6);
                     }
                     .price {
+                        font-family: $fredoka;
                         color: red;
                         font-size:.5rem;
                     }

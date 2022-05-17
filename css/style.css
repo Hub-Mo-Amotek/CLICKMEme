@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url(/images/wp5015262-desktop-rick-and-morty-wallpapers.jpg);
+  background-image: url(../images/wp5015262-desktop-rick-and-morty-wallpapers.jpg);
 }
 
 header {
@@ -181,6 +181,7 @@ section {
   background: rgb(145, 238, 6);
 }
 #container .upgrade-container #upgrade-buttons .price {
+  font-family: "Fredoka One", "Arial Narrow", Arial, sans-serif;
   color: red;
   font-size: 0.5rem;
 }
