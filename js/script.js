@@ -8,8 +8,8 @@ let clickPower = document.getElementById('clickPower');
 let autoClickCounter = document.getElementById('auto-click-counter');
 let memeHolder = document.getElementById('the-meme-holder');
 let priceOne = 100;
-let priceTwo = 1000;
-let priceThree = 2000;
+let priceTwo = 500;
+let priceThree = 1000;
 
 
 
