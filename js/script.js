@@ -55,10 +55,10 @@ let upgraderTwo =  document.getElementById('auto-clicker').addEventListener('cli
 // the third upgrade button
 let upgraderThree = document.getElementById('meme-clicker').addEventListener('click', () => {
 
-    // if (counter > priceThree) {
-        // counter -= priceThree;
-        // counterHTML.innerHTML = Math.round(counter);
-        // priceThree *= 1.5;
+    if (counter > priceThree) {
+        counter -= priceThree;
+        counterHTML.innerHTML = Math.round(counter);
+        priceThree *= 1.5;
         document.getElementById('price-three').innerHTML = Math.round(priceThree) + ' SMH'
         let randomNum = Math.floor(Math.random()*theMemes.length);
         let randomMeme = theMemes[randomNum];
@@ -68,10 +68,10 @@ let upgraderThree = document.getElementById('meme-clicker').addEventListener('cl
         imgOne.setAttribute('src', randomMeme);
         let memeCollection = document.getElementById('collected-memes');
         memeCollection.append(imgOne);    
-    // }
-    // else {
-    //     alert("you are poor, go get them Schmeckles!!")
-    // }
+    }
+    else {
+        alert("you are poor, go get them Schmeckles!!")
+    }
 })
 
 
