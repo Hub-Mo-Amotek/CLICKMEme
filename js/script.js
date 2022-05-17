@@ -7,9 +7,9 @@ let counterHTML = document.getElementById('theCounter');
 let clickPower = document.getElementById('clickPower');
 let autoClickCounter = document.getElementById('auto-click-counter');
 let memeHolder = document.getElementById('the-meme-holder');
-let priceOne = 100;
-let priceTwo = 500;
-let priceThree = 1000;
+let priceOne = 50;
+let priceTwo = 100;
+let priceThree = 500;
 
 
 
