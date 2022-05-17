@@ -1,6 +1,6 @@
 
 //variables
-let counter = 0;
+let counter = Math.round(0);
 let upgradeOne = 1;
 let upgradeTwo = 0
 let counterHTML = document.getElementById('theCounter');
@@ -13,6 +13,7 @@ let priceThree = 500;
 
 
 
+
 // meme pic array
 let theMemes = ["memeImages/DogVsCat.png", "memeImages/CuteKitty.png","memeImages/ClarkKentProblems.png","memeImages/ChildHoodGoku.png","memeImages/ConfusedOprah.png","memeImages/scottBitch.png","memeImages/ChipmunksVersion.png","memeImages/SaminaMinaEhEH.png","memeImages/YeetWaiter.png","memeImages/Dreams.png","memeImages/ShittyToShitty.png","memeImages/RealityChecker.png","memeImages/FastBanana.png","memeImages/NoNotificationForMe.png","memeImages/GrowingUpForGamers.png","memeImages/GrowingUpForGamers.png","memeImages/ThingsIDo.png","memeImages/CountryAndMe.png","memeImages/EmbraceTradition.png","memeImages/ShowerProblems.png","memeImages/SatanWorkingAtYT.png","memeImages/WhatSchoolTeachesYou.png"]
 
@@ -20,14 +21,11 @@ let theMemes = ["memeImages/DogVsCat.png", "memeImages/CuteKitty.png","memeImage
 
 // the first upgrade button
 let upgraderOne = document.getElementById('click-plus').addEventListener('click', () => {
-    console.log(counter);
-    console.log(priceOne);
-
     if (counter > priceOne){ 
         counter -= priceOne;
-        counterHTML.innerHTML = counter;
-        priceOne *= 2;
-        document.getElementById('price-one').innerHTML = priceOne + ' SMH';
+        counterHTML.innerHTML = Math.round(counter);
+        priceOne *= 1.5;
+        document.getElementById('price-one').innerHTML = Math.round(priceOne) + ' SMH';
         upgradeOne += 1;
         clickPower.innerHTML = upgradeOne;
     }
@@ -41,10 +39,10 @@ let upgraderTwo =  document.getElementById('auto-clicker').addEventListener('cli
 
     if(counter > priceTwo) {
         counter -= priceTwo;
-        priceTwo *= 1.7;
-        document.getElementById('price-two').innerHTML = priceTwo +' SMH'
+        let nPriceTwo = priceTwo *= 1.5;
+        document.getElementById('price-two').innerHTML = Math.round(priceTwo) +' SMH'
         setInterval(() => {
-            counterHTML.innerHTML = counter += 1;
+            counterHTML.innerHTML = Math.round(counter += 1);
         },1000);
         upgradeTwo += 1
         autoClickCounter.innerHTML = upgradeTwo;
@@ -59,9 +57,9 @@ let upgraderThree = document.getElementById('meme-clicker').addEventListener('cl
 
     if (counter > priceThree) {
         counter -= priceThree;
-        counterHTML.innerHTML = counter;
+        counterHTML.innerHTML = Math.round(counter);
         priceThree *= 1.5;
-        document.getElementById('price-three').innerHTML = priceThree + ' SMH'
+        document.getElementById('price-three').innerHTML = Math.round(priceThree) + ' SMH'
         let randomNum = Math.floor(Math.random()*theMemes.length);
         let randomMeme = theMemes[randomNum];
         memeHolder.setAttribute('src', randomMeme);
@@ -77,6 +75,6 @@ let upgraderThree = document.getElementById('meme-clicker').addEventListener('cl
 // the incrementor
 let clicker = document.getElementById('clickImage').addEventListener('click',() => {
     counter += upgradeOne;
-    counterHTML.innerHTML = counter;
+    counterHTML.innerHTML = Math.round(counter);
 });
 
