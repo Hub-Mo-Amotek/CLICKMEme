@@ -7,10 +7,12 @@ let counterHTML = document.getElementById('theCounter');
 let clickPower = document.getElementById('clickPower');
 let autoClickCounter = document.getElementById('auto-click-counter');
 let memeHolder = document.getElementById('the-meme-holder');
+let pickleImageHolder = document.getElementById('clickImage');
 let priceOne = 50;
 let priceTwo = 100;
-let priceThree = 500;
-let priceFour = 600;
+let priceThree = 0;
+let priceFour = 0;
+
 
 
 
@@ -87,7 +89,6 @@ let upgraderThree = document.getElementById('meme-clicker').addEventListener('cl
         document.getElementById('price-three').innerHTML = Math.round(priceThree) + ' SMH'
         let randomNum = Math.floor(Math.random()*theMemes.length);
         let randomMeme = theMemes[randomNum];
-        console.log(randomMeme)
         memeHolder.setAttribute('src', randomMeme);
         let imgOne = document.createElement('img');
         imgOne.setAttribute('src', randomMeme);
@@ -99,11 +100,6 @@ let upgraderThree = document.getElementById('meme-clicker').addEventListener('cl
     }
 })
 
-/* the portal --> make this change background and fontcolor( like entering another dimension) with a timer on top that counts 30s and all clicks are current schmeckle power * 10 and meeseeks produce 10x more schmeckles */
-
-// let bonusPortal = document.getElementById('portal-entrance').addEventListener('click', () => {
-
-// })
 
 
 // the incrementor
@@ -111,4 +107,43 @@ let clicker = document.getElementById('clickImage').addEventListener('click',() 
     counter += upgradeOne;
     counterHTML.innerHTML = Math.round(counter);
 });
+
+/* the portal --> make this change background and fontcolor( like entering another dimension) with a timer on top that counts 30s and all clicks are current schmeckle power * 10 and meeseeks produce 10x more schmeckles */
+
+let bonusPortal = document.getElementById('portal-entrance').addEventListener('click', () => {
+    if (counter > priceFour) {
+        counter -= priceFour;
+        priceFour *= 2;
+        
+    let timeLeft = 30;
+    let timerPlace = document.getElementById('timer');
+    let timerTextPlace = document.getElementById('timerDiv');
+    
+    let timerId = setInterval(countdown, 1000);
+    function countdown() {
+        if (timeLeft == -1) {
+            clearTimeout(timerId);
+            timerTextPlace.setAttribute('hidden', '')
+            pickleImageHolder.setAttribute('src', 'images/pickle-rick-from-rick-and-morty-clipart-rick-and-morty-pickle-rick-plant-food-produce-green-transparent-png-1450754.png')
+            pickleImageHolder.setAttribute('width', '150rem');
+            upgradeOne = 1;
+
+        }
+        else {
+            timerTextPlace.removeAttribute('hidden');
+            timerPlace.innerHTML = timeLeft;
+            timeLeft--;
+            pickleImageHolder.setAttribute('src', 'images/SuperSayanPickleRick.png.png');
+            pickleImageHolder.setAttribute('width', '320rem');
+            upgradeOne = 100;
+
+        }
+
+    }
+    }
+    else {
+        alert("you are poor, go get them Schmeckles!!")
+    }
+})
+
 

@@ -50,10 +50,22 @@ section {
   justify-content: center;
 }
 #container .click-container #clicker-head {
+  display: flex;
+  flex-direction: column;
   height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#container .click-container #timerDiv {
+  font-size: 2rem;
+  font-family: "Bubblegum Sans", "Arial Narrow", Arial, sans-serif;
+}
+#container .click-container #timer {
+  font-size: 3rem;
+  color: green;
+  font-weight: bold;
+  text-decoration: underline 5px solid greenyellow;
 }
 #container .click-container #clicker {
   height: 30vh;
@@ -65,7 +77,7 @@ section {
   animation: spin 45s infinite;
 }
 #container .click-container #clicker img:hover {
-  width: 14rem;
+  width: 17rem;
   transition: 1s;
 }
 @keyframes spin {
@@ -207,6 +219,10 @@ section {
 #container .upgrade-container #upgrade-buttons #portal {
   width: 5rem;
   animation: twist 60s infinite;
+}
+#container .upgrade-container #upgrade-buttons #portal:hover {
+  width: 7rem;
+  transition: 1s;
 }
 @keyframes twist {
   from {

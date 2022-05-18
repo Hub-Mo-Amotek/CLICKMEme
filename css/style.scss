@@ -53,10 +53,23 @@ section {
         flex-direction: column;
         justify-content: center;
             #clicker-head {
+                display: flex;
+                flex-direction: column;
                 height: 30vh;
                 display:flex;
                 align-items: center;
                 justify-content: center;
+            }
+            #timerDiv {
+                font-size: 2rem;
+                font-family: $bubblegum;
+            }
+            #timer {
+                font-size: 3rem;
+                color: green;
+                font-weight: bold;
+                text-decoration: underline 5px solid greenyellow;
+                // text-shadow: black 1px 1px 0px;
             }
             #clicker {
                 height: 30vh;
@@ -68,7 +81,7 @@ section {
                         animation: spin 45s infinite;
                     }
                     img:hover {
-                        width: 14rem;
+                        width: 17rem;
                         transition: 1s;
                     }
                     @keyframes spin {
@@ -221,6 +234,10 @@ section {
                     #portal {
                         width: 5rem;
                         animation: twist 60s infinite;
+                    }
+                    #portal:hover {
+                        width: 7rem;
+                        transition: 1s;
                     }
                     @keyframes twist {
                         from { transform: rotate(7200deg); }
