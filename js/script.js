@@ -10,8 +10,8 @@ let memeHolder = document.getElementById('the-meme-holder');
 let pickleImageHolder = document.getElementById('clickImage');
 let priceOne = 50;
 let priceTwo = 100;
-let priceThree = 0;
-let priceFour = 0;
+let priceThree = 500;
+let priceFour = 300;
 
 
 
@@ -115,12 +115,12 @@ let bonusPortal = document.getElementById('portal-entrance').addEventListener('c
         counter -= priceFour;
         priceFour *= 2;
         
-    let timeLeft = 30;
-    let timerPlace = document.getElementById('timer');
-    let timerTextPlace = document.getElementById('timerDiv');
+        let timeLeft = 30;
+        let timerPlace = document.getElementById('timer');
+        let timerTextPlace = document.getElementById('timerDiv');
     
-    let timerId = setInterval(countdown, 1000);
-    function countdown() {
+        let timerId = setInterval(countdown, 1000);
+        function countdown() {
         if (timeLeft == -1) {
             clearTimeout(timerId);
             timerTextPlace.setAttribute('hidden', '')
@@ -139,7 +139,7 @@ let bonusPortal = document.getElementById('portal-entrance').addEventListener('c
 
         }
 
-    }
+        }
     }
     else {
         alert("you are poor, go get them Schmeckles!!")
